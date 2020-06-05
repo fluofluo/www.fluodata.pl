@@ -1,0 +1,484 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-transparent"
+  color-on-scroll="200"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+      <a
+        class="navbar-brand"
+        href="#strona_glowna"
+        placement="bottom"
+        tooltip="Wróć do początku"
+      >
+        <span> 
+          <img alt="Circle image" class="img-fluid" src="assets/img/logo_fluodata_transparent_small.png"/>
+        </span>
+      </a>
+      <button
+        aria-controls="navigation-index"
+        aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="isCollapsed = !isCollapsed"
+        id="navigation"
+        type="button"
+      >
+        <span class="navbar-toggler-bar bar1"> </span>
+        <span class="navbar-toggler-bar bar2"> </span>
+        <span class="navbar-toggler-bar bar3"> </span>
+      </button>
+    </div>
+    <div
+      class="navbar-collapse justify-content-end"
+      [collapse]="isCollapsed"
+      id="navigation"
+    >
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand"><a> FLUODATA </a></div>
+          <div class="col-6 collapse-close text-right">
+            <button
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#strona_glowna"> Strona główna </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#o_nas"> O nas </a>
+        </li>
+        <li class="dropdown nav-item" dropdown>
+          <a
+            class="dropdown-toggle nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            dropdownToggle
+            href="javascript:void(0)"
+          >
+            <i class="nav-item"> </i> Oferta
+          </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a class="dropdown-item" href="#mapowania">
+              <i class="tim-icons icon-app"> </i> Mapowania
+            </a>
+            <a class="dropdown-item" href="#walidacje">
+              <i class="tim-icons icon-check-2"> </i> Walidacje / Kwalifikacje
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#kontakt"> Kontakt </a>
+        </li>
+        
+          <!-- <li class="nav-item p-0">
+            <a
+              class="nav-link"
+              href="https://www.facebook.com/CreativeTim"
+              placement="bottom"
+              target="_blank"
+              tooltip="Like us on Facebook"
+            >
+              <i class="fab fa-facebook-square"> </i>
+              <p class="d-lg-none d-xl-none">Facebook</p>
+            </a>
+          </li> -->
+         
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="wrapper">
+    <div class="page-header header-filter" id="strona_glowna">
+      
+      <div class="squares square2"></div>
+      <div class="squares square3"></div>      
+      <div class="squares square5"></div>
+      <div class="squares square6"></div>
+      <div class="squares square7"></div>
+      <div class="container">
+        <div class="content-center">
+            <div class="row row-grid justify-content-between align-items-center text-left">
+              <div class="col-lg-6 col-md-6">
+                <h1 class="text-white">
+                  <br />
+                  Nie musisz się już o nic martwić
+                  <br />
+                  <br /> 
+                </h1>
+                <h3 class="text-white mb-3">
+                  Instalujemy czujniki, wykonujemy pomiary, opracowujemy raporty.
+                  Masz więcej czasu na swoją prace.
+                </h3>
+               
+              </div>
+              <div class="col-lg-4 col-md-5">
+                <img alt="Circle image" class="img-fluid" src="assets/img/logo_no_title_transparent.png"/>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="main">
+    <section class="section section-lg" id="o_nas">
+        <section class="section">
+          <img class="path" src="assets/img/path4.png" />
+    
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <h2 class="text-center">Wykorzystujemy Internet Rzeczy (Iot) w procesach <br /> wspomagających jakość naszych klientów.</h2>
+                <div class="row row-grid justify-content-center">
+                  <div class="col-lg-3">
+                    <div class="info">
+                      <div class="icon icon-info">
+                        <i class="tim-icons icon-atom"> </i>
+                      </div>
+                      <h4 class="info-title">Duża flota dokładnych czujników</h4>
+                      <hr class="line-info" />
+      
+                      <p>
+                        Realizujemy największe projekty. Mierzymy temperaturę z dokładnością 0,3 st. C, <br />wilgotność 3 %.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="info">
+                      <div class="icon icon-success">
+                        <i class="tim-icons icon-notes"> </i>
+                      </div>
+                      <h4 class="info-title">Raporty już w 24 H</h4>
+                      <hr class="line-success" />
+      
+                      <p>
+                        Nasz system wyposażony jest w moduł raportowania. Komputer liczy, a my skupiamy się na sprawdzeniu i wnioskach.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="info">
+                      <div class="icon icon-info">
+                        <i class="tim-icons icon-delivery-fast"> </i>
+                      </div>
+                      <h4 class="info-title">Duża gotowość</h4>
+                      <hr class="line-info" />
+      
+                      <p>
+                        Obsługujemy zlecenia na terenie całego kraju już następnego dnia od zamówienia.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="info">
+                      <div class="icon icon-success">
+                        <i class="tim-icons icon-lock-circle"> </i>
+                      </div>
+                      <h4 class="info-title">Bezpieczeństwo danych</h4>
+                      <hr class="line-success"/>
+      
+                      <p>
+                        Wszystkie dane zapisywane są zarówno w czujniku jak i w chmurze. Zawsze mamy do nich dostęp.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="section section-lg" id="mapowania">
+        <img class="path" src="assets/img/path5.png" />
+    
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-6">
+              <img class="img-fluid floating" src="assets/img/mapowania.jpg" />
+    
+           
+            </div>
+            <div class="col-md-6">
+              <div class="px-md-5">
+                <hr class="line-success" />
+    
+                <h2>Mapowania</h2>
+                
+                  <h4>Badamy rozkład temperatury i wilgotności w takich obiektach jak:<br /></h4>
+
+                  <h6>
+                  &nbsp;&nbsp;&nbsp;&nbsp;• magazyny <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;• lodówki / chłodnie <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;• zamrażarki / mroźnie <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;• auta, kontenery chłodnicze / mroźnicze <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;• cieplarki <br />
+                </h6>
+                <ul class="list-unstyled mt-5">
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-success mb-2">
+                        <i class="tim-icons icon-book-bookmark"> </i>
+                      </div>
+                      <div class="ml-3"><p>Wszystkie nasze czujniki posiadają akredycję PCA</p></div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-success mb-2">
+                        <i class="tim-icons icon-chat-33"> </i>
+                      </div>
+                      <div class="ml-3"><p>Posiadamy wieloletnie doświadczenie co pozwala osiągnąć nam 100% skuteczność akceptacji dokumentacji przez GIF</p></div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-success mb-2">
+                        <i class="tim-icons icon-notes"> </i>
+                      </div>
+                      <div class="ml-3"><p>Wykonujemy następujące dokumenty: analiza ryzyka, protokół mapowania, raport mapowania, plan rozmieszczenia czujników</p></div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-success mb-2">
+                        <i class="tim-icons icon-wifi"> </i>
+                      </div>
+                      <div class="ml-3"><p>Bezprzewodowe czujniki są łatwe i szybkie w instalacji</p></div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-success mb-2">
+                        <i class="tim-icons icon-zoom-split"> </i>
+                      </div>
+                      <div class="ml-3"><p>Podgląd on-line bieżących pomiarów umożliwia nam nazdór nad prawidłowym przebiegiem procesu</p></div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-success mb-2">
+                        <i class="tim-icons icon-single-02"> </i>
+                      </div>
+                      <div class="ml-3"><p>Nasi instalatorzy posiadają uprawnienia na podesty ruchome.</p></div>
+                    </div>
+                  </li>                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-lg" id="walidacje">
+            
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-6">
+              <div class="px-md-5">
+                <hr class="line-info" />
+    
+                <h2>Walidacja / Kwalifikacja</h2>
+                
+                  <h4>Pojęcia te są często wymiennne w zależności od charakteru przeprowadzanego procesu. Ogólnie ujmując jest to działanie mające na celu
+                    udowodnienie, że elementy wyposażenia pracują w sposób nienaganny i pozwalają faktycznie uzyskiwać oczekiwane rezultaty.<br /></h4>
+                  <h4>Przeprowadzamy walidacje/kwalifikacje działania takich urządzeń jak:<br /></h4>
+
+                  <h6>
+                  &nbsp;&nbsp;&nbsp;&nbsp;• lodówki / chłodnie <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;• zamrażarki / mroźnie <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;• cieplarki <br />
+                </h6>
+                <ul class="list-unstyled mt-5">
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-info mb-2">
+                        <i class="tim-icons icon-book-bookmark"> </i>
+                      </div>
+                      <div class="ml-3"><p>Wszystkie nasze czujniki posiadają akredycję PCA</p></div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-info mb-2">
+                        <i class="tim-icons icon-check-2"> </i>
+                      </div>
+                      <div class="ml-3"><p>Wykonujemy testy temperaturowe urządzeń chłodniczych takie jak: <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;• praca przy otwarciu urządzenia <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;• utrzymanie temperatury przy braku zasilania <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;• inne</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-info mb-2">
+                        <i class="tim-icons icon-zoom-split"> </i>
+                      </div>
+                      <div class="ml-3"><p>Podgląd bieżących danych on-line pozwala na kalibrację urządzenia i kontynuację procesu w odpowiednich warunkach.</p></div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="d-flex align-items-center">
+                      <div class="icon icon-info mb-2">
+                        <i class="tim-icons icon-wifi"> </i>
+                      </div>
+                      <div class="ml-3"><p>Bezprzewodowe czujniki są łatwe i szybkie w instalacji</p></div>
+                    </div>
+                  </li>                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <img class="img-fluid floating" src="assets/img/denys.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section-lg" id="kontakt">
+      
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            
+            
+            <div class="col-md-4">
+              <div class="px-md-5">
+                <hr class="line-success" />
+                <h2>Kontakt</h2>
+              </div>
+
+              <div class="info info-horizontal">
+                <div class="icon icon-success"><i class="tim-icons icon-square-pin"></i>
+                </div>
+                <div class="description"><h4 class="info-title">Nasze biuro</h4><p> ul. Młynarska 42. lok. 115<br> 01-171 Warszawa<br> Polska </p>
+                </div>
+              </div>
+              <div class="info info-horizontal">
+              <div class="icon icon-success"><i class="tim-icons icon-mobile"></i>
+              </div>
+              <div class="description"><h4 class="info-title">Zadzwoń do nas</h4><p>+48 793 327 770 <br> Pon - Pt, 8:00 - 17:00</p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon icon-success"><i class="tim-icons icon-email-85"></i>
+              </div>
+              <div class="description"><h4 class="info-title">E - mail</h4>              
+              <a href = "mailto: piotrwiencis@fluodata.pl">piotrwiencis@fluodata.pl</a>
+              </div>
+            </div>
+
+          </div>
+
+
+            <div class="col-md-8">
+              <div class="px-md-5">
+             
+              
+                <div class="google-map" id="map-container-google-1">
+                
+               
+                    <iframe width="100%" height="350px" frameborder="" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2054.474845706131!2d20.969536479035796!3d52.23982160618379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb795130f777%3A0xd8ae63fab8915f41!2sM%C5%82ynarska%2042%2F115%2C%2001-205%20Warszawa!5e0!3m2!1spl!2spl!4v1588020038556!5m2!1spl!2spl"></iframe>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+          
+        </div>
+
+         
+      </section>
+
+  
+        
+
+          
+        
+
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-4">
+              <ul class="nav">
+                <li class="nav-item">
+                  <img alt="Circle image" class="img-fluid" src="assets/img/logo_fluodata_transparent_medium.png"/>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-md-4">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#strona_glowna"> Strona główna </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#o_nas"> O nas </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#mapowania"> Mapowania </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#walidacje"> Walidacje </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""> Polityka prywatności </a>
+              </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="nav">
+                <li>
+                  <h5>FLUODATA SP. Z O. O.</h5>
+                </li>
+                <li>
+                    <h5>UL. MŁYNARSKA 42 LOK. 115</h5>
+                </li>
+                <li>
+                  <h5>01-171 WARSZAWA </h5>
+                </li>
+                <li> 
+                    <h5> NIP 527-292-67-19 <br> KRS 0000839760 <br> REGON 38598758000000</h5>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="col-md-3">
+              <h3 class="title">Follow us:</h3>
+              <div class="btn-wrapper profile">
+               
+                <a
+                  class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook-square"> </i>
+                </a>
+               
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </footer>
+
+
+</div>
+
