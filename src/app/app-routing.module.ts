@@ -6,15 +6,15 @@ import { Routes, RouterModule } from "@angular/router";
 //import { IndexComponent } from "./pages/index/index.component";
 //import { ProfilepageComponent } from "./pages/examples/profilepage/profilepage.component";
 //import { RegisterpageComponent } from "./pages/examples/registerpage/registerpage.component";
-//import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.component";
+import { PolicypageComponent } from "./pages/examples/policypage/policypage.component";
 import { MainpageComponent } from "./pages/examples/mainpage/mainpage.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "mainpage", pathMatch: "full" },
   //{ path: "home", component: IndexComponent },
-  //{ path: "profile", component: ProfilepageComponent },
+  //{ path: "profilepage", component: ProfilepageComponent },
   //{ path: "register", component: RegisterpageComponent },
-  //{ path: "landing", component: LandingpageComponent },
+  { path: "policypage", component: PolicypageComponent },
   { path: "mainpage", component: MainpageComponent }
 ];
 
@@ -23,9 +23,12 @@ const routes: Routes = [
     CommonModule,
     BrowserModule,
     RouterModule.forRoot(routes, {
-      useHash: true
+      useHash: true,
+      scrollPositionRestoration: 'enabled'
     })
   ],
+
+  
   exports: []
 })
 export class AppRoutingModule {}
